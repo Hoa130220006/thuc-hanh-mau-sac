@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Sử dụng màu sắc trong trang web</title>
+    <style>
+        :root {
+            --color-level-1: #00ADEE; /* Màu chính - Bậc 1 */
+            --color-level-2: #00B2EF; /* Bậc 2 */
+            --color-level-4: #00BFF2; /* Bậc 4 */
+            --color-level-7: #8DD7F7; /* Bậc 7 */
+            --color-level-9: #C6E9FA; /* Bậc 9 */
+            --text-dark: #000000;     /* Chữ đen */
+            --text-light: #ffffff;    /* Chữ trắng */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--color-level-4);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: var(--color-level-1);
+            color: var(--text-light);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            background-color: var(--color-level-7);
+            color: var(--text-dark);
+            padding: 30px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .badge-sale {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--color-level-2);
+            color: var(--text-light);
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+
+        .btn-preview {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: var(--color-level-1);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--color-level-9);
+            color: var(--text-dark);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CodeGym - Phối màu đơn tông (Monochromatic)</h1>
+        </header>
+
+        <main class="content-section">
+            <h2>Sản phẩm nổi bật</h2>
+            <p>Trang web sử dụng phối màu đơn tông dựa trên màu xanh thương hiệu (#00ADEE).</p>
+
+            <div class="product-card">
+                <span class="badge-sale">ON SALE</span>
+                <h3>Khóa học Lập trình Web</h3>
+                <p>Thực hành phối màu theo đúng yêu cầu bài tập.</p>
+                <a href="#" class="btn-preview">PREVIEW</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Bài thực hành phối màu đơn tông - CodeGym</p>
+        </footer>
+    </div>
+
+</body>
+</html>
